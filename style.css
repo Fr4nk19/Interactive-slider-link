@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .link-slide .slide-menu {
     width: 100%;
     display: flex;
@@ -8,7 +11,7 @@
     height: 100%;
 }
   .link-slide .slide-menu > div{
-    width: 33.333333%;
+    width: 25%;
     background: transparent;
     padding: 2vh 0px;
     float: left;
@@ -20,7 +23,7 @@
     position: relative;
   }
   .link-slide .slide-menu > div:last-child{
-    width: 33.333333%;
+    width: 25%;
     background: transparent;
     float: left;
     text-align: center;
@@ -71,5 +74,40 @@
 }
 .link-slide .slide-menu > .active .wrap_txt {
     bottom: 117px;
+    transition: 0.5s ease all;
+}
+
+.wrap_txt h1 {
+    margin: 0 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    text-align: left;
+    font-size: 80px;
+}
+.active .wrap_txt h1{
+    color: #fff;
+}
+.wrap_txt h3 {
+    text-align: left;
+    margin: 0 20px;
+    color: #fff;
+}
+.wrap_txt a {
+    display: none;
+    transition: 0.5s ease all;
+}
+.active .wrap_txt a {
+    display: block;
+    width: 29%;
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+    padding: 13px 0;
+    border-radius: 5px;
+    margin-top: 24px;
+    font-size: 22px;
+    text-transform: uppercase;
     transition: 0.5s ease all;
 }
