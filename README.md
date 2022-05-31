@@ -1,1 +1,1 @@
-# Interactive-slider-link
+# Interactive slider link
